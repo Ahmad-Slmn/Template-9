@@ -8,10 +8,6 @@
     font-family: arial
 }
 
-body {
-    overflow-x: hidden
-}
-
 input {
     outline: none
 }
@@ -149,10 +145,10 @@ hr:not([size]) {
     bottom: 40px !important
 }
 
-@media(max-width:450px) {
-    .container-fluid {
-        margin-right: 30px !important
-    }
+@media(max-width:400px) {
+    .subscribe form button{width: 100% !important}
+    
+    .footer .copyright{font-size: 10px !important}
 }
 
 @media(max-width:767px) {
@@ -474,7 +470,8 @@ hr:not([size]) {
     background: none;
     border: 3px solid var(--color1);
     width: 80px;
-    height: 80px
+    height: 80px;
+    
 }
 
 .testimonials .carousel-indicators button img {
@@ -585,8 +582,12 @@ hr:not([size]) {
     align-items: center
 }
 
+@media(max-width:400px){
+    .subscribe form{flex-direction: column}
+}
+
 .subscribe .form-control {
-    width: 400px;
+    width: 100%;
     padding: 10px
 }
 
@@ -858,10 +859,6 @@ hr:not([size]) {
 }
 
 /* End Footer */
-
-.subscribe form {
-    display: block
-}
 
 .subscribe .form-control {
     margin: 20px auto
