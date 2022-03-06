@@ -120,6 +120,7 @@ $(function () {
 
         e.preventDefault();
 
+        $(".navbar-collapse").toggleClass("show");
 
         $("html, body").animate({
 
@@ -147,12 +148,8 @@ $(function () {
 
             }
         })
-    })
-    //   localStorage.setItem("color", $(":root").css("--color1"))
-    //
-    //    console.log(localStorage.color)
-
-
+    });
+    
     //bullets
     $(".nav-bullets .bullet").click(function () {
 

@@ -8,6 +8,8 @@
     font-family: arial
 }
 
+body{overflow-x: hidden}
+
 input {
     outline: none
 }
@@ -15,6 +17,8 @@ input {
 a {
     text-decoration: none
 }
+
+.navbar-dark .navbar-toggler{box-shadow: none !important}
 
 
 ::selection {
