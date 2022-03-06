@@ -1,0 +1,893 @@
+/* Start My Frame Work */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: arial
+}
+
+body {
+    overflow-x: hidden
+}
+
+input {
+    outline: none
+}
+
+a {
+    text-decoration: none
+}
+
+
+::selection {
+    background: black;
+    color: yellow
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity var(--trans)
+}
+
+:root {
+
+    --color1: #E41B17;
+    --trans: .4s
+}
+
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 80px;
+    right: 5px;
+    padding: 15px;
+    background-color: var(--color1);
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    display: none;
+    z-index: 9999
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--color1)
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+
+}
+
+.h1 {
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color1)
+}
+
+
+.change {
+    background: var(--color1) !important;
+    border-radius: 5px
+}
+
+/* End My Frame Work */
+
+/* Strat Overriding Bootstrap */
+
+.navbar-dark .navbar-toggler {
+    margin-bottom: 5px
+}
+
+.navbar-dark .navbar-nav {
+    text-indent: 5px
+}
+
+.navbar-dark .navbar-brand {
+    font-size: 30px
+}
+
+.navbar-dark .navbar-brand span {
+    color: var(--color1)
+}
+
+.navbar-nav .dropdown-menu {
+    background: #333;
+    min-width: 210px;
+    border-top: 3px solid var(--color1)
+}
+
+hr:not([size]) {
+    color: var(--color1);
+    opacity: .55
+}
+
+.dropdown-item {
+    color: #fff;
+    transition: var(--trans)
+}
+
+.dropdown-item:hover {
+    background: var(--color1);
+    color: #fff;
+    padding-left: 25px
+}
+
+#carouselExampleIndicators {
+    height: 600px !important
+}
+
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item,
+#carouselExampleIndicators .w-100 {
+    height: 100% !important
+}
+
+#carouselExampleIndicators .carousel-caption {
+    height: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+
+#carouselExampleIndicators .carousel-indicators {
+    bottom: 40px !important
+}
+
+@media(max-width:450px) {
+    .container-fluid {
+        margin-right: 30px !important
+    }
+}
+
+@media(max-width:767px) {
+    p {
+        font-size: 10px !important
+    }
+}
+
+
+.carousel-caption {
+
+    background: rgba(3, 3, 3, 0.5);
+    top: 50%;
+    margin-top: -158px;
+
+}
+
+
+.carousel-indicators [data-bs-target] {
+
+    opacity: 1
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: var(--color1)
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: var(--trans);
+    color: #fff !important
+}
+
+.navbar-dark .navbar-nav .nav-link:not(.nav-link.change):hover {
+    color: var(--color1) !important
+}
+
+/* End Overriding Bootstrap */
+
+/* Strat optin-box */
+.settings-box {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background: var(--color1);
+    width: 200px;
+    z-index: 9999;
+    min-height: 100vh;
+    transition: var(--trans)
+}
+
+.settings-box.show {
+    left: 0
+}
+
+.settings-box .gear-box {
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background: var(--color1);
+    cursor: pointer;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff
+}
+
+.settings-box .gear-box i {
+    width: 30px;
+    padding: 8px 0
+}
+
+.settings-box .settings {
+
+    padding: 5px;
+    text-align: center
+}
+
+.settings-box .option-box {
+    margin-bottom: 10px;
+    background: #ddd
+}
+
+.settings-box .settings h4 {
+    margin: 0;
+    color: #666;
+    font-size: 14px
+}
+
+
+.settings-box .settings .colors-list {
+    margin: 10px 0 0
+}
+
+.settings-box .settings .colors-list li {
+    width: 24px;
+    height: 24px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid #eee0
+}
+
+.settings-box .settings .colors-list li.active {
+    border-color: #fff
+}
+
+.settings-box .settings .colors-list li.active {
+    border-color: #fff
+}
+
+.settings-box .settings .colors-list li:first-of-type {
+    background: #E41B17
+}
+
+.settings-box .settings .colors-list li:nth-child(2) {
+    background: #E91E63
+}
+
+.settings-box .settings .colors-list li:nth-child(3) {
+    background: #ff9800
+}
+
+.settings-box .settings .colors-list li:nth-child(4) {
+    background: #080
+}
+
+.settings-box .settings .colors-list li:last-of-type {
+    background: #e426d5
+}
+
+.settings-box .yes,
+.settings-box .no {
+
+    width: 60px;
+    background: var(--color1);
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--trans);
+    opacity: .5
+}
+
+.settings-box span.active {
+    opacity: 1
+}
+
+.settings-box .reset-options {
+
+    background: red;
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px
+}
+
+/* End optin-box */
+
+/* Strat nav-bullets */
+.nav-bullets {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    z-index: 9999
+}
+
+.nav-bullets .bullet {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--color1);
+    margin: 10px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: var(--trans);
+    display: none
+}
+
+.nav-bullets .bullet:hover {
+    background-color: var(--color1)
+}
+
+.nav-bullets .bullet .tooltip {
+    background-color: var(--color1);
+    width: 120px;
+    color: #fff;
+    padding: 3px 10px;
+    position: absolute;
+    right: 32px;
+    top: -10px;
+    cursor: default;
+    pointer-events: none;
+    display: none;
+    opacity: 1
+}
+
+.nav-bullets .bullet:hover .tooltip {
+    display: block
+}
+
+.nav-bullets .bullet .tooltip::before {
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent var(--color1);
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/* End nav-bullets */
+
+
+/* Strat About */
+.about {
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+.about .lead {
+    color: #888;
+    font-size: 15px;
+    margin-top: 15px
+}
+
+.about h1 span {
+    color: var(--color1)
+}
+
+.about h1 {
+    font-weight: bold
+}
+
+/* End About */
+
+/* Strat Features */
+
+.features {
+    background: #eee;
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+.features h1 {
+    margin-bottom: 30px;
+    font-weight: bold
+}
+
+.features .feat {
+    margin-bottom: 20px
+}
+
+.features .feat p {
+    line-height: 1.6em
+}
+
+.features .feat i {
+    font-size: 25px;
+    color: var(--color1)
+}
+
+/* End Features */
+
+/* Strat Testimonials */
+.testimonials {
+
+    padding-bottom: 40px;
+    padding-top: 70px
+}
+
+.testimonials span {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color1)
+}
+
+.testimonials .carousel-inner {
+
+    min-height: 160px
+}
+
+.testimonials .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto
+}
+
+.testimonials .carousel-indicators [data-bs-target] {
+
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    opacity: .1;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all var(--trans) ease;
+    margin: 5px
+}
+
+.testimonials .carousel-indicators [data-bs-target].active {
+    opacity: 1;
+    background: none;
+    border: 3px solid var(--color1);
+    width: 80px;
+    height: 80px
+}
+
+.testimonials .carousel-indicators button img {
+    max-width: 100%;
+
+}
+
+/* End Testimonials */
+
+/* Strat Price */
+.price {
+    background: #eee;
+    padding-top: 70px;
+    padding-bottom: 40px
+}
+
+.price h1 {
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.price .price_box {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px
+}
+
+.price .price_box h2 {
+    margin: 5px 0 15px
+}
+
+.price .price_box p {
+    font-size: 30px;
+    color: #666;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    background: #f3f3f3;
+    display: inline-block;
+    transition: var(--trans);
+    border: 3px solid #f3f3f3
+}
+
+.price .price_box:hover p {
+    transform: scale(1.2, 1.2)rotate(360deg);
+    border-color: #dfdfdf
+}
+
+.price .price_box ul {
+    line-height: 200%;
+    font-size: 18px
+}
+
+/* End Price */
+
+/* Strat our_team  */
+.our_team {
+    background-image: url(../images/team.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 600px
+}
+
+.our_team .team {
+
+    background: rgba(2, 2, 2, 0.8);
+    color: #fff;
+    min-height: 600px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+.our_team .team h1 {
+    margin-bottom: 40px
+}
+
+.our_team .team .person {
+    margin-bottom: 40px
+}
+
+.our_team .team .person img {
+
+    border: 3px solid #fff;
+    padding: 2px
+}
+
+/* End our_team  */
+
+/* Strat subscribe */
+.subscribe {
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+
+.subscribe .h1 {
+    color: #888;
+    letter-spacing: 1px
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.subscribe .form-control {
+    width: 400px;
+    padding: 10px
+}
+
+.subscribe button {
+    background: var(--color1);
+    color: #fff;
+    height: 46px;
+    border: 0;
+    border-radius: 6px;
+    width: 151px
+}
+
+/* End subscribe */
+
+/* Strat statistics */
+.statistics {
+    background-image: url(../images/stats.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 300px;
+
+}
+
+.statistics .data {
+
+    background: rgba(2, 2, 2, 0.8);
+    color: #b6b6b6;
+    min-height: 300px;
+    padding-bottom: 40px;
+    padding-top: 70px
+}
+
+.statistics .data h2 {
+    margin-bottom: 60px
+}
+
+.statistics .data .stats {
+    margin-bottom: 10px;
+    transition: var(--trans)
+}
+
+.statistics .data .stats:hover {
+    color: #fff
+}
+
+.statistics .data .stats p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.statistics .data .stats span {
+    font-size: 18px
+}
+
+/* End statistics */
+
+/* Strat our-skills */
+.our-skills {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.our-skills .container > h2 {
+    margin-top: 0;
+    font-weight: bold
+}
+
+.our-skills .progress {
+    height: 35px;
+    margin: 15px;
+    position: relative;
+    align-items: center
+}
+
+.our-skills .progress .progress-bar {
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px
+}
+
+.our-skills .progress span {
+
+    text-indent: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--color1);
+    display: none
+}
+
+.our-skills .progress span.active {
+    display: block
+}
+
+.our-skills .skills-info p {
+    font-size: 15px;
+    color: #777
+}
+
+/* End our-skills */
+
+/* Strat contact-us */
+.contact-us {
+    background-image: url(../images/contact-us.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 300px
+}
+
+.contact-us p {
+    margin-bottom: 40px
+}
+
+.contact-us .fields {
+    background: rgba(9, 9, 9, .7);
+    min-height: 300px;
+    color: #ddd;
+    padding-top: 80px;
+    padding-bottom: 40px
+}
+
+.contact-us .form-group {
+    margin-bottom: 10px
+}
+
+.contact-us textarea {
+    height: 100px;
+    resize: none
+}
+
+.contact-us textarea,
+.contact-us input {
+    background: rgba(82, 78, 78, 0.7);
+    color: #fff;
+    border: none
+}
+
+.contact-us input {
+    padding: 10px
+}
+
+.contact-us input:focus {
+    background: rgba(82, 78, 78, 0.7)
+}
+
+.contact-us textarea:focus {
+    background: rgba(82, 78, 78, 0.7)
+}
+
+.contact-us button {
+    background: var(--color1);
+    color: #fff
+}
+
+.contact-us ::placeholder {
+    color: #ccc
+}
+
+/* End contact-us */
+
+/* Strat our-clients */
+.our-clients {
+    background: #eee;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.our-clients img {
+    opacity: .3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: var(--trans)
+}
+
+.our-clients img:hover {
+    opacity: 1
+}
+
+.our-clients ul {
+    padding-left: 0
+}
+
+/* End our-clients */
+
+/* Start Footer */
+.footer {
+    background: #111;
+    color: #aaa
+}
+
+.footer a {
+    color: #aaa;
+    transition: var(--trans)
+}
+
+.footer a:hover {
+    color: #fff
+}
+
+.footer h3 {
+    color: var(--color1);
+    letter-spacing: 1px;
+    margin: 20px 0
+}
+
+.footer ul:first-of-type {
+
+    overflow: hidden
+}
+
+.footer ul:first-of-type li {
+    width: 33.3333%;
+    float: left;
+    padding: 5px 0
+}
+
+.footer ul:last-of-type {
+    overflow: hidden;
+    margin-left: -12px
+}
+
+.footer ul:last-of-type li {
+    float: left;
+    padding: 5px 0;
+    margin-right: 5px;
+    opacity: .5;
+    transition: var(--trans)
+}
+
+.footer ul:last-of-type li:hover {
+    opacity: 1
+}
+
+.footer .img-thumbnail {
+    background: rgba(0, 0, 0, .1);
+    border: 1px solid #444;
+    margin-bottom: 10px
+}
+
+.footer ul {
+    padding-left: 0
+}
+
+.footer .row .media {
+    display: flex
+}
+
+.footer .row .media > a {
+    margin-right: 10px
+}
+
+.footer .copyright {
+
+    background: #333;
+    color: #aaa;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.footer .copyright span {
+    color: var(--color1)
+}
+
+/* End Footer */
+
+.subscribe form {
+    display: block
+}
+
+.subscribe .form-control {
+    margin: 20px auto
+}
+
+.subscribe form button {
+    width: 400px
+}
+
+.our-clients ul {
+    text-align: center
+}
+
+.our-skills .skills-info {
+    text-align: center
+}
+
+
+h1,
+h2 {
+    font-size: 20px !important
+}
+
+h3,
+h4,
+h5 {
+    font-size: 15px !important
+}
+}
