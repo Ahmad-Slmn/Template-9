@@ -153,12 +153,21 @@ hr:not([size]) {
     .subscribe form button{width: 100% !important}
     
     .footer .copyright{font-size: 10px !important}
+    
 }
 
 @media(max-width:767px) {
     p {
         font-size: 10px !important
     }
+    
+    #carouselExampleIndicators{height: 300px !important}
+    
+    #carouselExampleIndicators .carousel-caption{top: 80% !important}
+    
+    #carouselExampleIndicators .carousel-indicators{bottom: 0 !important}
+    
+    #carouselExampleIndicators .carousel-caption .h1{margin-bottom: 0 !important}
 }
 
 
