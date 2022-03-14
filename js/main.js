@@ -99,7 +99,9 @@ $(function () {
         }
 
         // Show The Arrow-up If Window scrollY Is >= 700
-        if (this.scrollY >= 700) {
+        
+        if (this.scrollY >= 700 && $(".nav-bullets .bullet").css("display") == "none"
+) {
 
             $(".fa-arrow-up").fadeIn("slow")
 
@@ -149,7 +151,7 @@ $(function () {
             }
         })
     });
-    
+
     //bullets
     $(".nav-bullets .bullet").click(function () {
 

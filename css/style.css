@@ -8,7 +8,9 @@
     font-family: arial
 }
 
-body{overflow-x: hidden}
+body {
+    overflow-x: hidden
+}
 
 input {
     outline: none
@@ -18,7 +20,9 @@ a {
     text-decoration: none
 }
 
-.navbar-dark .navbar-toggler{box-shadow: none !important}
+.navbar-dark .navbar-toggler {
+    box-shadow: none !important
+}
 
 
 ::selection {
@@ -150,24 +154,36 @@ hr:not([size]) {
 }
 
 @media(max-width:400px) {
-    .subscribe form button{width: 100% !important}
-    
-    .footer .copyright{font-size: 10px !important}
-    
+    .subscribe form button {
+        width: 100% !important
+    }
+
+    .footer .copyright {
+        font-size: 10px !important
+    }
+
 }
 
 @media(max-width:767px) {
     p {
         font-size: 10px !important
     }
-    
-    #carouselExampleIndicators{height: 300px !important}
-    
-    #carouselExampleIndicators .carousel-caption{top: 80% !important}
-    
-    #carouselExampleIndicators .carousel-indicators{bottom: 0 !important}
-    
-    #carouselExampleIndicators .carousel-caption .h1{margin-bottom: 0 !important}
+
+    #carouselExampleIndicators {
+        height: 300px !important
+    }
+
+    #carouselExampleIndicators .carousel-caption {
+        top: 80% !important
+    }
+
+    #carouselExampleIndicators .carousel-indicators {
+        bottom: 0 !important
+    }
+
+    #carouselExampleIndicators .carousel-caption .h1 {
+        margin-bottom: 0 !important
+    }
 }
 
 
@@ -481,14 +497,12 @@ hr:not([size]) {
 .testimonials .carousel-indicators [data-bs-target].active {
     opacity: 1;
     background: none;
-    border: 3px solid var(--color1);
-    width: 80px;
-    height: 80px;
-    
+    border-color:  var(--color1)
+
 }
 
 .testimonials .carousel-indicators button img {
-    max-width: 100%;
+    max-width: 100%
 
 }
 
@@ -595,8 +609,24 @@ hr:not([size]) {
     align-items: center
 }
 
-@media(max-width:400px){
-    .subscribe form{flex-direction: column}
+@media(max-width:400px) {
+    .subscribe form {
+        flex-direction: column
+    }
+    
+   .testimonials .carousel-indicators [data-bs-target]{
+        margin: 0 !important
+    }
+    
+    .testimonials .carousel-indicators{
+        grid-gap: 3px
+    }
+    
+    .price .price_box ul li{
+        
+        font-size: 10px;
+        font-weight: bold
+    }
 }
 
 .subscribe .form-control {
@@ -762,6 +792,10 @@ hr:not([size]) {
 
 .contact-us ::placeholder {
     color: #ccc
+}
+
+:focus{
+    box-shadow: none !important
 }
 
 /* End contact-us */
